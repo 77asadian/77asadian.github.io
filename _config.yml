@@ -19,17 +19,17 @@ title: Hamid's Thoughts # the main title
 tagline: This is where I want to write my thoughts # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  Let's think about the ideas and then develop them farther.
+  A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://77asadian.github.io/"
+url: ""
 
 github:
-  username: 77asadian # change to your GitHub username
+  username: github_username # change to your GitHub username
 
 twitter:
-  username: hamiddd # change to your Twitter username
+  username: twitter_username # change to your Twitter username
 
 social:
   # Change to your full name.
