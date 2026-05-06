@@ -1,5 +1,5 @@
 ---
-title: "معمای آینه و حقیقتِ پیش‌رو"
+title: "The Mirror and Truth"
 date: 2026-05-05 12:00:00 +02:00
 categories: [Philosophy]
 tags: [identity, future, reflection]
