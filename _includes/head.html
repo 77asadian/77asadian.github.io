@@ -1,0 +1,49 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+<meta name="generator" content="Jekyll v{{ jekyll.version }}" />
+
+{% seo %}
+
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/assets/img/favicons/favicon.svg">
+<link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon.png">
+<link rel="manifest" href="{{ site.baseurl }}/assets/img/favicons/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com" >
+<link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.gstatic.com" >
+<link rel="preconnect" href="https://cdn.jsdelivr.net" >
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net" >
+
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/jekyll-theme-chirpy.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
+
+<script src="{{ site.baseurl }}/assets/js/dist/theme.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/dayjs@1.11.20/dayjs.min.js,npm/dayjs@1.11.20/locale/en.js,npm/dayjs@1.11.20/plugin/relativeTime.js,npm/dayjs@1.11.20/plugin/localizedFormat.js"></script>
+
+{% if layout.layout == 'home' %}
+  <script defer src="{{ site.baseurl }}/assets/js/dist/home.min.js"></script>
+{% elsif layout.layout == 'post' or layout.layout == 'page' %}
+  <script defer src="{{ site.baseurl }}/assets/js/dist/post.min.js"></script>
+{% endif %}
+
+<script defer src="{{ site.baseurl }}/app.min.js?baseurl={{ site.baseurl | url_encode }}&register=true" ></script>
+
+<!-- Custom Styles to hide unwanted elements -->
+<style>
+  #access-tags, 
+  #access-lastmod, 
+  .post-meta .post-tag, 
+  .post-meta i.fa-tags, 
+  .post-tags {
+    display: none !important;
+  }
+</style>
