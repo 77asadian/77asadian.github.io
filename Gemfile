@@ -9,8 +9,11 @@ gem "html-proofer", "~> 5.0", group: :test
 platforms :windows, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
+  gem "wdm", "~> 0.2.0"
 end
 
-gem "wdm", "~> 0.2.0", :platforms => [:windows]
-
 gem "jekyll-paginate"
+gem "jekyll-archives"
+gem "jekyll-sitemap"
+gem "jekyll-seo-tag"
+gem "jekyll-include-cache"

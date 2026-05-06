@@ -234,5 +234,4 @@ plugins:
   - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-changelog
   - jekyll-include-cache
