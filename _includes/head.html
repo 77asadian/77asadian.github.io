@@ -37,13 +37,42 @@
 
 <script defer src="{{ site.baseurl }}/app.min.js?baseurl={{ site.baseurl | url_encode }}&register=true" ></script>
 
-<!-- Custom Styles to hide unwanted elements -->
+<!-- Custom Styles to hide unwanted elements and expand layout -->
 <style>
-  #access-tags, 
-  #access-lastmod, 
-  .post-meta .post-tag, 
-  .post-meta i.fa-tags, 
+  /* Hide the right sidebar panel (Recently Updated, Trending Tags, TOC) */
+  #panel-wrapper {
+    display: none !important;
+  }
+
+  /* Expand the main content area to full width and center it */
+  main.col-12.col-lg-11.col-xl-9 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Hide Categories and Tags from the Post List (Home Page) */
+  .post-preview .post-meta > div:nth-child(2),
+  .post-preview .post-meta > div:has(i.fa-folder-open),
+  .post-preview .post-meta > div:has(i.fa-tags) {
+    display: none !important;
+  }
+
+  /* Hide Categories and Tags from the Post Page */
+  .post-meta .post-categories,
+  .post-meta i.fa-folder-open,
+  .post-meta i.fa-tags,
   .post-tags {
     display: none !important;
+  }
+
+  /* Hide Categories and Tags from the left navigation sidebar */
+  .nav-item:has(a[href*="/categories/"]),
+  .nav-item:has(a[href*="/tags/"]) {
+    display: none !important;
+  }
+
+  /* Additional cleanup for the post list meta row */
+  .post-meta {
+    justify-content: flex-start !important;
   }
 </style>
