@@ -1,12 +1,12 @@
 ---
-title: "The Mirror and Truth"
+title: "معمای آینه و حقیقتِ پیش‌رو"
 date: 2026-05-05 12:00:00 +02:00
 categories: [Philosophy]
 tags: [identity, future, reflection]
 lang: fa
 ---
 
-<div dir="rtl" style="text-align: right;">
+<div dir="rtl" style="text-align: right;" markdown="1">
 
 ## چرا ما محصول آینده‌ایم، نه گذشته؟
 
