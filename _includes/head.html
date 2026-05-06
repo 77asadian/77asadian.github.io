@@ -37,8 +37,136 @@
 
 <script defer src="{{ site.baseurl }}/app.min.js?baseurl={{ site.baseurl | url_encode }}&register=true" ></script>
 
-<!-- Custom Styles to hide unwanted elements and expand layout -->
+<!-- Custom Styles for Modern Aesthetic and Layout Cleanup -->
 <style>
+  /* Import Modern Font */
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+  :root {
+    --main-bg: transparent !important;
+    --sidebar-bg: rgba(15, 23, 42, 0.4) !important;
+    --topbar-bg: rgba(15, 23, 42, 0.4) !important;
+    --card-bg: rgba(255, 255, 255, 0.03) !important;
+    --text-color: #e2e8f0 !important;
+    --link-color: #818cf8 !important;
+    --link-hover-color: #c084fc !important;
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif !important;
+    background: linear-gradient(-45deg, #0f172a, #1e1b4b, #312e81, #1e1b4b) !important;
+    background-size: 400% 400% !important;
+    animation: gradientBG 15s ease infinite;
+    color: var(--text-color);
+  }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Glassmorphism Base Elements */
+  #sidebar {
+    background: var(--sidebar-bg) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  #topbar-wrapper {
+    background: var(--topbar-bg) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: none !important;
+  }
+
+  /* Content Area */
+  .main-wrapper {
+    background: transparent !important;
+  }
+  
+  #main-wrapper {
+    background: transparent !important;
+  }
+
+  /* Glassmorphism Post Cards */
+  .post-preview {
+    background: var(--card-bg) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px !important;
+    padding: 2rem !important;
+    margin-bottom: 2rem !important;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-preview:hover {
+    transform: translateY(-8px) scale(1.01);
+    background: rgba(255, 255, 255, 0.06) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Gradients for Text */
+  h1, .post-title, #sidebar h1 {
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+    background: linear-gradient(to right, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  
+  .post-preview .post-title {
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    color: #f8fafc !important;
+    transition: color 0.3s ease;
+  }
+  
+  .post-preview:hover .post-title {
+    background: linear-gradient(to right, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Profile Avatar Glow */
+  .profile-wrapper img {
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(129, 140, 248, 0.4);
+    transition: all 0.4s ease;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .profile-wrapper img:hover {
+    box-shadow: 0 0 35px rgba(192, 132, 252, 0.6);
+    transform: scale(1.05) rotate(5deg);
+    border: 2px solid rgba(192, 132, 252, 0.5);
+  }
+
+  /* Animations */
+  a {
+    transition: all 0.2s ease !important;
+  }
+
+  /* Post Content Typography */
+  .post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  /* Container adjustments for full width */
+  .container {
+    max-width: 1200px !important;
+  }
+
+  /* --- Previous Layout Cleanups --- */
+  
   /* Hide the right sidebar panel (Recently Updated, Trending Tags, TOC) */
   #panel-wrapper {
     display: none !important;
