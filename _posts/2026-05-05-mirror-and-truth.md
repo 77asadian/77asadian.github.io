@@ -1,6 +1,6 @@
 ---
 title: "معمای آینه و حقیقتِ پیش‌رو"
-date: 2026-05-05 12:00:00 +0200
+date: 2026-05-05 12:00:00 +02:00
 categories: [Philosophy]
 tags: [identity, future, reflection]
 lang: fa
